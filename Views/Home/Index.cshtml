@@ -1,0 +1,39 @@
+﻿@model AppEmployeesProyect.Models.EmployeeResponse
+
+@{
+	ViewData["Title"] = "Datos Empleados";
+}
+
+<div>
+	<form method="get" action="@Url.Action("Index", "Home")">
+		<div class="form-group">
+			<label for="searchInput">Search:</label>
+			<input type="text" class="form-control" id="searchInput" name="searchString" placeholder="Enter id to search">
+		</div>
+		<button type="submit" class="btn btn-primary">Search</button>
+	</form>
+</div>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>@Html.DisplayName("Id")</th>
+			<th>@Html.DisplayName("Name")</th>
+			<th>@Html.DisplayName("Salary")</th>
+			<th>@Html.DisplayName("Age")</th>
+			<th>@Html.DisplayName("Profile Image")</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var employee in Model.employees)
+		{
+			<tr>
+				<td>@employee.id</td>
+				<td>@employee.employeeName</td>
+				<td>@employee.employeeSalary</td>
+				<td>@employee.employeeAge</td>
+				<td>@employee.profileImage</td>
+			</tr>
+		}
+	</tbody>
+</table> 

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z/hOQjTdZ67rxkkPQXVYRwcB53EdOgC7zr9dSGCGPC3yldDOfr0pghsG/nxxQswu0/BSraFr3PLT7WbvqA389Q==",
+  "success": true,
+  "projectFilePath": "D:\\Users\\jhon\\Documents\\Dev\\ApiEmployeesNet\\AppEmployeesProyect\\AppEmployeesProyect\\AppEmployeesProyect.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jhon\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
